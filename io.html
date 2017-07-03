@@ -1,7 +1,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
 <script>
-  var socket = io('http://localhost:8080');
+  var socket = io('http://localhost:8080/my-namespace?c=dsfdfdftoken=343eedfd34343434');
   socket.on('news', function (data) {
     console.log(data);
     socket.emit('my other event', { my: 'data' });
